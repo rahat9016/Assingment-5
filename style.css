@@ -34,21 +34,36 @@ body{
     background-color: #3C2E64;
     color:#fff
 }
-.box{
+.foods{
     padding:0 0 20px 0;
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
 }
-.box img{
+.foods img{
     width: 100%;
 }
-.box h3{
+.foods h3{
     margin-top: 10px;
 }
-.contain-item{
+#foodItem{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
+}
+#showFoodInfo{
+    width: 400px;
+    background-color: rgb(24, 117, 160);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top:60%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    display: none;
+}
+#showFoodInfo img{
+    width: 100%;
 }

@@ -11,7 +11,7 @@
     <title>cooking master || Assingment- 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <header>
         <div class="container">
             <nav class="navigation">
@@ -29,58 +29,30 @@
             </nav>
         </div>
     </header>
+    <!--Search Area-->
     <section>
         <div class="container">
             <div class="search-box">
                 <form class="col-md-6 m-auto py-5">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search for Meal ...">
+                        <input id="mealValue" type="text" class="form-control" placeholder="Search for Meal ...">
                         <div class="input-group-append">
-                            <button type="button" class="btn search-btn">Search</button>
+                            <button id="srcBar" type="button" class="btn search-btn">Search</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <div class="contain-item">
-                <div class="box">
-                    <img src="img/1st.jpg" alt="">
-                    <h3>Vargan Salad bowl</h3>
-                </div>
-                <div class="box">
-                    <img src="img/2nd.jpg" alt="">
-                    <h3>Vargan Salad bowl</h3>
-                </div>
-                <div class="box">
-                    <img src="img/3d.jpg" alt="">
-                    <h3>Vargan Salad bowl</h3>
-                </div>
-                <div class="box">
-                    <img src="img/4th.jpg" alt="">
-                    <h3>Vargan Salad bowl</h3>
-                </div>
-                <div class="box">
-                    <img src="img/5th.jpg" alt="">
-                    <h3>Vargan Salad bowl</h3>
-                </div>
-                <div class="box">
-                    <img src="img/6th.jpg" alt="">
-                    <h3>Vargan Salad bowl</h3>
-                </div>
-                <div class="box">
-                    <img src="img/7th.jpg" alt="">
-                    <h3>Vargan Salad bowl</h3>
-                </div>
-                <div class="box">
-                    <img src="img/8th.jpg" alt="">
-                    <h3>Vargan Salad bowl</h3>
-                </div>
-            </div>
+    <div class='container'>
+        <div class="col-12">
+            <h1 class="text-center text-white" id="waring">Please enter valid food name.</h1>
+            <h1 class="text-center text-danger"id="warning-sorry">Sorry Sir, we are not find your Food...<br> Please Choose Any food</h1>
+                <div id="foodItem"></div>
+                <div id="showFoodInfo"></div>
         </div>
-    </section>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>

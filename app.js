@@ -10,7 +10,8 @@ document.getElementById("srcBar").addEventListener('click', function(){
         document.getElementById("waring").style.display = "none"
     }
     document.getElementById("mealValue").value = "";
-
+    document.getElementById("foodItem").innerText = "";
+    document.getElementById("showFoodInfo").innerText = "";
 })
 
 const foodName = (foodValue) =>{
@@ -70,7 +71,13 @@ const renderFoodInfo = food => {
         <li> </i> ${food.strIngredient1}</li>
         <li> </i> ${food.strIngredient2}</li>
         <li> </i> ${food.strIngredient3}</li>
+        
     </ul>
    `
 
 }
+
+// document.getElementById("body").addEventListener('click',function(){
+//     document.getElementById("showFoodInfo").style.display = "none";
+// })
+

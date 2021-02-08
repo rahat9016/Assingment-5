@@ -67,3 +67,10 @@ body{
 #showFoodInfo img{
     width: 100%;
 }
+#closeBtn{
+    position: absolute;
+    left: 85%;
+    top: 4%;
+    color:#fff;
+    font-size: 40px;
+}
